@@ -1,3 +1,10 @@
+require 'capybara/rspec'
+require 'simplecov'
+require 'simplecov-console'
+require 'capybara'
+require 'rspec'
+require 'features/web_helpers'
+
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,
   # Want a nice code coverage website? Uncomment this next line!
@@ -16,13 +23,6 @@ end
 ENV["RACK_ENV"] = 'test'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
-
-require 'capybara'
-require 'rspec'
-require 'features/web_helpers'
-require 'capybara/rspec'
-require 'simplecov'
-require 'simplecov-console'
 
 # tell capybara about our Battle class
 Capybara.app = Bookmark_Manager
