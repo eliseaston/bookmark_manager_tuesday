@@ -1,6 +1,6 @@
 # Bookmark Manager
 
-First user story:
+User stories:
 ```
 As a user,
 So I can see my most visited websites,
@@ -9,6 +9,12 @@ I want to see a list of bookmarks.
 Domain model:
 (from walkthrough)
 ![model](https://github.com/makersacademy/course/blob/master/bookmark_manager/images/bookmark_manager_1.png)
+
+```
+As a user,
+So I can save my favourite site for future
+I want to add a new bookmark.
+```
 
 ### setting up the database:
 1. Connect to psql
