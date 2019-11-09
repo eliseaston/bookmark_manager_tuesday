@@ -20,8 +20,13 @@ class Bookmark_Manager < Sinatra::Base
   end
 
   post '/new-bookmark' do
+    p params
     Bookmark.create(params[:bookmark_url], params[:bookmark_title])
     redirect '/bookmarks'
+  end
+
+  post '/delete' do
+    
   end
 
   run! if app_file == $0
